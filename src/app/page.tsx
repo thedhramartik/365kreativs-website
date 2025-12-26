@@ -7,9 +7,9 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const featuredWorks = [
-    { title: 'Echoes of Tomorrow', author: 'Amara Okafor', category: 'Poetry', excerpt: 'In the silence between heartbeats, I found my voice...' },
-    { title: 'City Lights', author: 'Kwame Mensah', category: 'Short Story', excerpt: 'The streets of Accra never sleep, they only dream...' },
-    { title: 'Roots and Wings', author: 'Zainab Hassan', category: 'Essay', excerpt: 'Identity is not a destination but a journey...' }
+    { title: 'Echoes of Tomorrow', author: 'Amara Okafor', category: 'Poetry', excerpt: 'In the silence between heartbeats, I found my voice...', link: "" },
+    { title: 'City Lights', author: 'Kwame Mensah', category: 'Short Story', excerpt: 'The streets of Accra never sleep, they only dream...', link: "" },
+    { title: 'Roots and Wings', author: 'Zainab Hassan', category: 'Essay', excerpt: 'Identity is not a destination but a journey...', link: "" }
   ];
   const featuredMembers = [
     { name: 'Amara Okafor', role: 'Poet', bio: 'A passionate poet exploring the depths of human emotions.', image: "/image.png", link: "" },
@@ -118,9 +118,9 @@ export default function Home() {
             >
               Join Our Community
             </a>
-            <button className="bg-[#424244] text-white px-8 py-3 rounded-4xl font-semibold hover:bg-[#bc3a08] hover:text-white opacity-50 hover:opacity-100 transition-colors">
+            {/* <button className="bg-[#424244] text-white px-8 py-3 rounded-4xl font-semibold hover:bg-[#bc3a08] hover:text-white opacity-50 hover:opacity-100 transition-colors">
               Read Our Works
-            </button>
+            </button> */}
           </div>
         </section>
 
@@ -147,11 +147,7 @@ export default function Home() {
 
             <div className="bg-[#424244] rounded-2xl p-8 mb-8">
               <p className="text-white text-lg mb-6 leading-relaxed">
-                {/* THE 365KREATIVS is more than just a poetry platform—it's a vibrant community dedicated to amplifying African voices through the timeless art of poetry and storytelling. Founded with a passion for celebrating our rich cultural heritage, we provide a space where writers can share their stories, connect with fellow artists, and grow their craft. */}
                 We are vibrant community that empowers creatives across various disciplines – writers, spoken word artistes, photographers, painters, innovators etc – to cultivate a consistent practice, unlock their full potential, and showcase their unique talents.
-              </p>
-              <p className="text-white opacity-90 leading-relaxed">
-                {/* Our mission is to preserve and promote African literary traditions while embracing contemporary forms of expression. Whether you're a seasoned poet or just beginning your writing journey, Dhramatik offers a supportive environment where your voice matters and your words resonate. */}
               </p>
             </div>
 
@@ -176,9 +172,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Our Mission</h3>
                 <p className="text-gray-700 text-sm">
-
                   Our mission is to provide a dynamic and inclusive platform that nurtures creativity by building consistency, fostering collaboration, and empowering artists to realize their full potential.
-                  {/* To create an inclusive community that nurtures talent, celebrates diversity, and amplifies authentic African narratives. */}
                 </p>
               </div>
 
@@ -190,8 +184,6 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">Our Values</h3>
                 <p className="text-gray-700 text-sm">
-                  {/* Authenticity, creativity, community, and respect for the power of words to transform lives and bridge cultures. */}
-
                   Consistency, authenticity, inclusion, integrity, growth, and support to amplify unique voices and inspire personal growth and positive societal impact.
                 </p>
               </div>
@@ -207,16 +199,18 @@ export default function Home() {
               View All <ChevronRight className="w-4 h-4" />
             </a> */}
           </div>
-          <a href="" className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-6">
             {featuredWorks.map((work, idx) => (
               <div key={idx} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                <span className="inline-block bg-[#bc3a08] text-white text-sm px-3 py-1 rounded-full mb-3">{work.category}</span>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{work.title}</h3>
-                <p className="text-black opacity-65 mb-2">by {work.author}</p>
-                <p className="text-black opacity-80 italic">{work.excerpt}</p>
+                <a href={work.link} className="">
+                  <span className="inline-block bg-[#bc3a08] text-white text-sm px-3 py-1 rounded-full mb-3">{work.category}</span>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">{work.title}</h3>
+                  <p className="text-black opacity-65 mb-2">by {work.author}</p>
+                  <p className="text-black opacity-80 italic">{work.excerpt}</p>
+                </a>
               </div>
             ))}
-          </a>
+          </div>
         </section>
 
         {/* Testimonials */}
@@ -240,9 +234,9 @@ export default function Home() {
         {/* TEAM */}
         <section id="community" className="py-4 px-4 sm:px-8 lg:px-12 mt-16">
           <div className="flex justify-between items-center">
-            <h1 className="text-4xl font-bold text-[#bc3a08]">Our Community</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-[#bc3a08]">Our Community</h1>
             <a
-              className="bg-[#bc3a08] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#424244] hover:text-white hover:opacity-50 transition-colors"
+              className="bg-[#bc3a08] text-white px-8 py-3 rounded-lg hidden md:block font-semibold hover:bg-[#424244] hover:text-white hover:opacity-50 transition-colors"
               href="https://linktr.ee/the365kreativhub"
               target="_blank"
               rel="noopener noreferrer"
@@ -253,7 +247,7 @@ export default function Home() {
 
           <section className="mt-4 bg-linear-to-r from-[#ffc6b1] to-[#ff6f3a] text-white rounded-xl p-8">
             <h2 className="text-2xl font-bold text-[#bc3a08] mb-3">Writer of the Month</h2>
-            <div className="flex items-center gap-6">
+            <div className="flex flex-col md:flex-row items-center gap-6">
 
               <img
                 src="/image.png"
@@ -261,14 +255,14 @@ export default function Home() {
                 className="w-34 h-34 rounded-full object-cover"
               />
               <div>
-                <h3 className="text-2xl font-bold text-black mb-2">Adaeze Okonkwo</h3>
-                <p className="text-black opacity-80 mb-3">
+                <h3 className="text-2xl font-bold text-black mb-2 text-center md:text-left">Adaeze Okonkwo</h3>
+                <p className="text-black opacity-80 mb-3 text-justify">
                   A powerful voice in contemporary African poetry, Adaeze's work explores themes of identity, migration, and belonging. Her recent collection "Between Two Worlds" has been featured in several international publications.
                 </p>
 
-                <div className="inline">
+                <div className="flex justify-center md:justify-start">
                   <a
-                    href={"/"}
+                    href={""}
                     className="text-center"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -315,9 +309,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-
-
-
           </section>
         </section>
 
@@ -329,14 +320,10 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 mt-6">
-            {/* <div className=" p-6 rounded-xl shadow-md text-center"> */}
             <div className="w-full bg-[#ffe2d7] text-[#bc3a08] p-6 rounded-lg font-semibold hover:bg-purple-100 transition-colors text-sm text-center">
-
-              {/* </div> */}
-              {/* <Mail className="w-10 h-10 text-purple-600 mx-auto mb-3" /> */}
               <h3 className="font-bold text-gray-800 mb-2">Email</h3>
               <a
-                href="mailto:the365kreativhub@gmail.com?subject=Hello&body=I%20am"
+                href="mailto:the365kreativhub@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -345,7 +332,6 @@ export default function Home() {
 
             </div>
             <div className="w-full bg-[#ffe2d7] text-[#bc3a08] p-6 rounded-lg font-semibold hover:bg-purple-100 transition-colors text-sm text-center">
-              {/* <Users className="w-10 h-10 text-purple-600 mx-auto mb-3" /> */}
               <h3 className="font-bold text-gray-800 mb-2">Social Media</h3>
               <a
                 href="https://linktr.ee/the365kreativhub"
@@ -356,9 +342,7 @@ export default function Home() {
               </a>
             </div>
             <div className="w-full bg-[#ffe2d7] text-[#bc3a08] p-6 rounded-lg font-semibold hover:bg-purple-100 transition-colors text-sm text-center">
-              {/* <Calendar className="w-10 h-10 text-purple-600 mx-auto mb-3" /> */}
               <h3 className="font-bold text-gray-800 mb-2">WhatsApp</h3>
-              {/* <p className="text-gray-600 text-sm">Join our group</p> */}
               <a
                 href="https://wa.me/message/Y2PFS5AHL36UO1"
                 target="_blank"
@@ -368,10 +352,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-
         </section>
-
-
 
         {/* FOOTER */}
         <footer className="mt-16 bg-[#1a1a1c] border-t border-[#424244]">
