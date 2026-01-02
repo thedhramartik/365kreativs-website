@@ -142,7 +142,7 @@ export default function Home() {
 
         {/* ABOUT US */}
         <section id="about" className="mt-16 py-4 px-4 sm:px-8 lg:px-12">
-          <div className="max-w-5xl mx-auto">
+          <div className="mx-auto">
             <h1 className="text-4xl font-bold text-[#bc3a08] mb-6 text-center">About Us</h1>
 
             <div className="bg-[#424244] rounded-2xl p-8 mb-8">
