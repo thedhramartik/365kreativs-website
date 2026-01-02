@@ -12,12 +12,12 @@ export default function Home() {
     { title: 'Smell of Fresh Beginnings', author: 'truth_andchaos', category: 'Poetry', excerpt: 'What does a fresh beginnings smell like to you. Wanna know mine...', link: "https://www.instagram.com/p/DS9uky8jTVV/?igsh=ODlsYXppbGdrenc0" }
   ];
   const featuredMembers = [
-    { name: 'Amara Okafor', role: 'Poet', bio: 'A passionate poet exploring the depths of human emotions.', image: "/image.png", link: "" },
-    { name: 'Kwame Mensah', role: 'Storyteller', bio: 'Crafting tales that reflect the vibrant culture of Ghana.', image: "/image.png", link: "" },
-    { name: 'Zainab Hassan', role: 'Essayist', bio: 'Writing thought-provoking essays on identity and belonging.', image: "/image.png", link: "" },
-    { name: 'Amara Okafor', role: 'Poet', bio: 'A passionate poet exploring the depths of human emotions.', image: "/image.png", link: "" },
-    { name: 'Kwame Mensah', role: 'Storyteller', bio: 'Crafting tales that reflect the vibrant culture of Ghana.', image: "/image.png", link: "" },
-    { name: 'Zainab Hassan', role: 'Essayist', bio: 'Writing thought-provoking essays on identity and belonging.', image: "/image.png", link: "" }
+    { name: 'Muyiwasam', role: 'Longest Serving Executive', bio: 'A catalyst who have carried the Hub, tirelessly giving his all to the media Team against all odds.', image: "/image.png", link: "https://www.instagram.com/p/DO3pQdUjiu9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+    { name: 'Crownedwealth', role: 'Executive of The Year 2025', bio: 'From structure to spirit, Crownedwealth has left her imprint on the Hub, not just in systems, but in service.', image: "/image.png", link: "https://www.instagram.com/p/DO3qTfADvuO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+    { name: 'DeeNurseWriter', role: 'Kreativ of The Year 2025', bio: 'From birthing the endearing word Hubby, to coming out overall best in the 100-day writing marathon B1 and winning the 365Duel September edition. She truly redifined what it truly means to be a KREATIV.', image: "/image.png", link: "https://www.instagram.com/p/DO3rB5ZjtZY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+    { name: 'Ebunife', role: 'Consistency Queen 2025', bio: 'Ebunife pen never runs dry, in stories, even in services, she is always there, even when it is not convenient.', image: "/image.png", link: "https://www.instagram.com/p/DO9ALVbEQzm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+    { name: 'Henshaw', role: 'Consistency King 2025', bio: 'Earned proof, not noise, for showing up every time and always contributing to the growth of the hub.', image: "/image.png", link: "https://www.instagram.com/p/DO6rt7xCWm8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+    { name: 'Liyahs Musing', role: 'Rising Star Kreativ 2025', bio: 'Liyah engages with every comment, contribution, and cheer. Her creative growth is also one that inspires us all', image: "/image.png", link: "https://www.instagram.com/p/DPBHxGOjUdc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" }
   ];
   return (
     <div className="font-sans">
@@ -338,7 +338,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                the365kreativhub@gmail.com
+                linktr.ee/the365kreativhub
               </a>
             </div>
             <div className="w-full bg-[#ffe2d7] text-[#bc3a08] p-6 rounded-lg font-semibold hover:bg-purple-100 transition-colors text-sm text-center">
