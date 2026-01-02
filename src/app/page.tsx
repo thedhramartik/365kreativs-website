@@ -219,8 +219,8 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-[#bc3a08] mb-6 text-center">Community Voices</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-[#5c5c5c] p-6 rounded-xl">
-                <p className="text-white opacity-85 mb-4 italic">"I found my voice, built the courage and consistency to keep showing up for my craft. The HUB is HOME to me. I built amazing relationships that have helped in several ways from here."</p>
-                <p className="font-semibold text-black">— DeeNurseWriter, Writer</p>
+                <p className="text-white opacity-85 mb-4 italic">"The Hub has strengthened my writing prowess, expanded my knowledge, and challenged me to show up better through intentional contests and creative community. It embodies love, light, community and growth — and I am truly grateful to be a member."</p>
+                <p className="font-semibold text-black">— Darasimi Bamirola, Writer</p>
               </div>
               <div className="bg-[#5c5c5c] p-6 rounded-xl">
                 <p className="text-white opacity-85 mb-4 italic">"Being part of the Hub has been amazing to my creative journey. The environment is inspiring and supportive. It is really a home for creatives to grow, collaborate, and thrive daily."</p>
