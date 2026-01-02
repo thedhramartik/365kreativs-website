@@ -7,9 +7,9 @@ export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const featuredWorks = [
-    { title: 'Echoes of Tomorrow', author: 'Amara Okafor', category: 'Poetry', excerpt: 'In the silence between heartbeats, I found my voice...', link: "" },
-    { title: 'City Lights', author: 'Kwame Mensah', category: 'Short Story', excerpt: 'The streets of Accra never sleep, they only dream...', link: "" },
-    { title: 'Roots and Wings', author: 'Zainab Hassan', category: 'Essay', excerpt: 'Identity is not a destination but a journey...', link: "" }
+    { title: 'Your Growth is Your Responsiblity', author: 'The Precious Pen', category: 'Prose', excerpt: 'Growth with time? A big lie! Time does not fix things. Growth happens when...', link: "https://www.instagram.com/p/DI4Vh7yI_UP/?igsh=MWg5MXllcGcxY3NtcA==" },
+    { title: 'Dear HUBby', author: 'Beth!', category: 'Poetry', excerpt: 'Some love does not ask for permission. It shows up quietly, stays consistently, and becomes home without making noise. This is one of those letters...', link: "https://www.instagram.com/p/DRXs22tCNoY/?igsh=MWkwMzFtYmxld3B4bg==" },
+    { title: 'Smell of Fresh Beginnings', author: 'truth_andchaos', category: 'Poetry', excerpt: 'What does a fresh beginnings smell like to you. Wanna know mine...', link: "https://www.instagram.com/p/DS9uky8jTVV/?igsh=ODlsYXppbGdrenc0" }
   ];
   const featuredMembers = [
     { name: 'Amara Okafor', role: 'Poet', bio: 'A passionate poet exploring the depths of human emotions.', image: "/image.png", link: "" },
@@ -105,8 +105,8 @@ export default function Home() {
             />
           </div>
           <div className="mt-10 flex-col items-center text-center gap-6">
-            <h1 className="text-[#bc3a08] mb-4 text-4xl font-bold">Where African Voices Echo Through Poetry</h1>
-            <p className="w-full lg:max-w-[65%] md:max-w-[75%] md:mx-auto px-4 sm:px-6 lg:px-8 opacity-60">Dhramatik is a premium poetry community. Share your poems, explore others' emotions, and connect through the art of words.</p>
+            <h1 className="text-[#bc3a08] mb-4 text-4xl font-bold">THE 365KREATIV HUB</h1>
+            <p className="w-full lg:max-w-[65%] md:max-w-[75%] md:mx-auto px-4 sm:px-6 lg:px-8 opacity-60">Welcome to a vibrant community that empowers creatives across various disciplines - writers, spoken word artistes, photographers, etc - to cultivate a consistent lifestyle, unlock their full potential, and showcase their unique talents.</p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 my-10 text-[14px]">
@@ -202,7 +202,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-4 md:gap-6">
             {featuredWorks.map((work, idx) => (
               <div key={idx} className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                <a href={work.link} className="">
+                <a href={work.link} className="" target="_blank" rel="noopener noreferrer">
                   <span className="inline-block bg-[#bc3a08] text-white text-sm px-3 py-1 rounded-full mb-3">{work.category}</span>
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{work.title}</h3>
                   <p className="text-black opacity-65 mb-2">by {work.author}</p>
@@ -219,12 +219,12 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-[#bc3a08] mb-6 text-center">Community Voices</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-[#5c5c5c] p-6 rounded-xl">
-                <p className="text-white opacity-85 mb-4 italic">"This community gave me the courage to share my voice. The support and feedback have been invaluable to my growth as a writer."</p>
-                <p className="font-semibold text-black">— Sarah Nkrumah, Poet</p>
+                <p className="text-white opacity-85 mb-4 italic">"I found my voice, built the courage and consistency to keep showing up for my craft. The HUB is HOME to me. I built amazing relationships that have helped in several ways from here."</p>
+                <p className="font-semibold text-black">— DeeNurseWriter, Writer</p>
               </div>
               <div className="bg-[#5c5c5c] p-6 rounded-xl">
-                <p className="text-white opacity-85 mb-4 italic">"I've connected with amazing writers and found opportunities I never knew existed. This is more than a community—it's a family."</p>
-                <p className="font-semibold text-black">— David Osei, Novelist</p>
+                <p className="text-white opacity-85 mb-4 italic">"Being part of the Hub has been amazing to my creative journey. The environment is inspiring and supportive. It is really a home for creatives to grow, collaborate, and thrive daily."</p>
+                <p className="font-semibold text-black">— Okoro David, Photographer</p>
               </div>
             </div>
           </div>
@@ -246,7 +246,7 @@ export default function Home() {
           </div>
 
           <section className="mt-4 bg-linear-to-r from-[#ffc6b1] to-[#ff6f3a] text-white rounded-xl p-8">
-            <h2 className="text-2xl font-bold text-[#bc3a08] mb-3">Writer of the Month</h2>
+            <h2 className="text-2xl font-bold text-[#bc3a08] mb-3">Kreativ of the Month - Dec 2025</h2>
             <div className="flex flex-col md:flex-row items-center gap-6">
 
               <img
@@ -255,14 +255,14 @@ export default function Home() {
                 className="w-34 h-34 rounded-full object-cover"
               />
               <div>
-                <h3 className="text-2xl font-bold text-black mb-2 text-center md:text-left">Adaeze Okonkwo</h3>
+                <h3 className="text-2xl font-bold text-black mb-2 text-center md:text-left">Tahiral Amal</h3>
                 <p className="text-black opacity-80 mb-3 text-justify">
-                  A powerful voice in contemporary African poetry, Adaeze's work explores themes of identity, migration, and belonging. Her recent collection "Between Two Worlds" has been featured in several international publications.
+                  A passionate writer and poet whose word is rooted in sincerity, emotion, and intentional storytelling. Through ink and reflection, she captures love, life, and becoming with a voice that feels both gentle and powerful.
                 </p>
 
                 <div className="flex justify-center md:justify-start">
                   <a
-                    href={""}
+                    href={"https://www.instagram.com/p/DS5B8rPiOXW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="}
                     className="text-center"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -362,7 +362,7 @@ export default function Home() {
               <div className="md:col-span-3">
                 <h3 className="text-[#bc3a08] text-2xl font-bold mb-4">THE 365KREATIVS</h3>
                 <p className="text-gray-400 text-sm mb-4">
-                  Amplifying African voices through the power of poetry and storytelling.
+                  Empowering creatives to cultivate a consistent practice, unlock their full potential, and showcase their unique talents.
                 </p>
                 <div className="flex gap-4">
                   <a href="https://www.instagram.com/the365kreativs/" target="_blank"
