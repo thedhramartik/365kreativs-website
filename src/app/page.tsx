@@ -12,7 +12,7 @@ export default function Home() {
     { title: 'Smell of Fresh Beginnings', author: 'truth_andchaos', category: 'Poetry', excerpt: 'What does a fresh beginnings smell like to you. Wanna know mine...', link: "https://www.instagram.com/p/DS9uky8jTVV/?igsh=ODlsYXppbGdrenc0" }
   ];
   const featuredMembers = [
-    { name: 'Muyiwasam', role: 'Longest Serving Executive', bio: 'A catalyst who have carried the Hub, tirelessly giving his all to the media Team against all odds.', image: "/image.png", link: "https://www.instagram.com/p/DO3pQdUjiu9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+    { name: 'Muyiwasam', role: 'Longest Serving Executive', bio: 'A catalyst who has carried the Hub, tirelessly giving his all to the media Team against all odds.', image: "/image.png", link: "https://www.instagram.com/p/DO3pQdUjiu9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
     { name: 'Crownedwealth', role: 'Executive of The Year 2025', bio: 'From structure to spirit, Crownedwealth has left her imprint on the Hub, not just in systems, but in service.', image: "/image.png", link: "https://www.instagram.com/p/DO3qTfADvuO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
     { name: 'DeeNurseWriter', role: 'Kreativ of The Year 2025', bio: 'From birthing the endearing word Hubby, to coming out overall best in the 100-day writing marathon B1 and winning the 365Duel September edition. She truly redifined what it truly means to be a KREATIV.', image: "/image.png", link: "https://www.instagram.com/p/DO3rB5ZjtZY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
     { name: 'Ebunife', role: 'Consistency Queen 2025', bio: 'Ebunife pen never runs dry, in stories, even in services, she is always there, even when it is not convenient.', image: "/image.png", link: "https://www.instagram.com/p/DO9ALVbEQzm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
@@ -105,7 +105,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-10 flex-col items-center text-center gap-6">
-            <h1 className="text-[#bc3a08] mb-4 text-4xl font-bold">THE 365KREATIV HUB</h1>
+            <h1 className="text-[#fce9bb] mb-4 text-4xl font-bold">THE 365KREATIV HUB</h1>
             <p className="w-full lg:max-w-[65%] md:max-w-[75%] md:mx-auto px-4 sm:px-6 lg:px-8 opacity-60">Welcome to a vibrant community that empowers creatives across various disciplines - writers, spoken word artistes, photographers, etc - to cultivate a consistent lifestyle, unlock their full potential, and showcase their unique talents.</p>
           </div>
 
@@ -147,7 +147,7 @@ export default function Home() {
 
             <div className="bg-[#424244] rounded-2xl p-8 mb-8">
               <p className="text-white text-lg mb-6 leading-relaxed">
-                We are vibrant community that empowers creatives across various disciplines – writers, spoken word artistes, photographers, painters, innovators etc – to cultivate a consistent practice, unlock their full potential, and showcase their unique talents.
+                We are a vibrant community that empowers creatives across various disciplines – writers, spoken word artistes, photographers, painters, innovators etc – to cultivate a consistent practice, unlock their full potential, and showcase their unique talents.
               </p>
             </div>
 
